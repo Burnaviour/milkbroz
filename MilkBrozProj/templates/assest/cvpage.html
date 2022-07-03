@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<body class="d-flex flex-column min-vh-100 bg-dark">
+
+
+
+    <br><br>
+    <div class=" p-5 d-flex justify-content-center">
+        <div>
+            <a class="m-5 btn btn-secondary btn-lg" href="https://drive.google.com/file/d/1mRy1HDLosJja126cJiS1OrJVMkExyWJS/view?usp=sharing" role="button">Click here to view CV</a>
+            <br>
+        </div>
+
+
+
+        <br><br>
+        <div>
+            <a class="m-5 btn btn-secondary btn-lg" href="{% static "cv.pdf" %}" role="button">Click here to download CV</a></div>
+    </div> <br> <br>
+
+</body>
+{% endblock %}

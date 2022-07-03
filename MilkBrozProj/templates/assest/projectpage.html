@@ -1,0 +1,63 @@
+
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+
+
+<body class="d-flex flex-column min-vh-100 bg-dark">
+
+    <section class="row">
+        <h1 class="p-5 d-flex justify-content-center text-white">My PROJECTS </h1>
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn bg-secondary text-white" data-bs-toggle="collapse" href="#collapseOne">
+                 Light Following Robot
+                </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="p-5 card-body text-dark">
+                        <p>You ever wanted to build your very own robot, but did not know where to start? In this project, you will build a fun, relatively simple robot, with no computer programming required. The robot in this project uses light sensors,
+                            which are electronic components that can detect light; they will help the robot follow a flashlight beam—just like a cat uses its eyes to track a laser pointer. Figure 1 and the video show what the robot looks like and how
+                            it works.</p>
+                        <figure>
+                            <img class="d-flex justify-content-center" src="https://www.sciencebuddies.org/v3Me8AW5pelBHA5MHgn0gjRZC3E=/500x484/-/https/www.sciencebuddies.org/Files/7123/8/light-tracking-robot.jpg" alt="">
+
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn bg-secondary text-white" data-bs-toggle="collapse" href="#collapse2">
+                 DISCORD PROJECT 
+                </a>
+                </div>
+                <div id="collapse2" class="collapse show" data-bs-parent="#accordion">
+                    <div class="p-5 card-body text-dark">
+                        <p>The discord API provides you with an easy tool to create and use your own bots and tools. Today we are going to take a look at how we can create a basic music bot and add it to our server. The bot will be able to play, skip and
+                            stop the music and will also support queuing functionality.</p>
+                        <figure>
+                            <img class="d-flex justify-content-center" src="https://cdn.digitbin.com/wp-content/uploads/Best-Music-Discord-Bots.png" alt="discord">
+
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <br> <br>
+    <img class="img-fluid" src="{% static "images/bg-2.jpg" %}" alt="gb2">
+
+</body>
+
+{% endblock %}
