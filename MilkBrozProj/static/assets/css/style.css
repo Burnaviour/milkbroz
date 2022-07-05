@@ -8223,12 +8223,5 @@ div#scrollbar::-webkit-scrollbar-thumb {
 
 }
 
-.checked {
-  color : olivedrab;
-  font-size : 15px;
-}
-.unchecked {
-  font-size : 15px;
-  color : lightgray;
-}
+
 /*# sourceMappingURL=style.css.map */
