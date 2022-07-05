@@ -1,33 +1,69 @@
-from django.shortcuts import render
 
+from django.shortcuts import render
+import uuid
 # Create your views here.
 import datetime
-from queue import Empty
+
 from django.shortcuts import render
 from projectapp.models import Contact
 from django.contrib import messages
 # Create your views here.       
 def index(request):
    
-    return render(request,'assest/index.html')
+    return render(request,'assests/index.html')
 
-
-
-# def save_data(request):
+def gallery(request):
     
-#     if (request.method == 'POST'):
+    
+    # context = {'cos':'cash on delivery',
+    #                            'cc':'Using visa card'
+    #                            }
+   
+
         
-#         name = request.POST.get('name')
-#         email = request.POST.get('email')
-#         desc = request.POST.get('proj')
-#         if len(name)<2 or len(email)<6 or len(desc)<3:
-#             messages.error(request,'Please fill form correctly')
+    return render(request,'assests/gallery.html') 
+def shop(request):
+    
+    
+    context = {'cos':'cash on delivery',
+                               'cc':'Pickup'
+                               }
+
+        
+    return render(request,'assests/shop.html',context) 
+          
+def about(request):
+    
+    
+    # context = {'cos':'cash on delivery',
+    #                            'cc':'Using visa card'
+    #                            }
+   
+
+        
+    return render(request,'assests/about.html') 
+     
+
+def save_data(request):
+    context = {'cos':'cash on delivery',
+                               'cc':'Pickup'
+                               }
+    if (request.method == 'POST'):
+        test = uuid.uuid4()
+        
+        name = request.POST.get('name')
+      
+        answer = request.POST.get('answer')
+        phonenumber = request.POST.get('quantity')
+        address = request.POST.get('proj')
+        if len(name)<2 or len(address)<15 or len(phonenumber)<8:
+            messages.error(request,'Please fill form correctly')
         
 
-#         else:
-#             data = Contact(name=name, email=email, desc=desc, date=datetime.datetime.now())
-#             messages.success(request,'Thank you for reaching us.Your Response has been Recorded')
-#             data.save()
-        
-#     return render(request,'projectapp/contact me.html')    
+        else:
+
+            data = Contact(name=name, phone_number=phonenumber,address=address ,payment=answer, date=datetime.datetime.now(),trans_id=test)
+            messages.success(request,'Your order has been placed.it will be delivered shortly.')
+            data.save()
+    return render(request,'assests/shop.html',context) 
 

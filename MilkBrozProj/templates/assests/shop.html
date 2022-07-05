@@ -1,0 +1,585 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+		<!-- page header section ending here -->
+        <section class="page-header padding-tb page-header-bg-1">
+            <div class="container">
+                <div class="page-header-item d-flex align-items-center justify-content-center">
+                    <div class="post-content">
+                        <h3>Fullfil Your Dairy Needs</h3>
+                        <div class="breadcamp">
+                            <ul class="d-flex flex-wrap justify-content-center align-items-center">
+                                <li><a href="{% url 'index' %}">Home</a> </li>
+                               
+                                <li><a class="active" href="{% url 'shop' %}">Shop Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page header section ending here -->
+
+<section class="shop-page padding-tb"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-12 sticky-widget">
+                <div class="shop-title d-flex flex-wrap justify-content-between" style = "margin-top:-55px;">
+                    <marquee>We will deliver on your door step. We accept only cash on delivery.</marquee>
+                </div>
+                
+                
+                <div class="shop-product-wrap grid row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s1.png" alt="shop">
+                                <div class="product-action-link">
+                                
+                                    <i class = "text-white" >The milk is too fresh</i>
+                                    
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Fresh Milk</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(97 review)</span>
+                                </p>
+                                <h6>110 Rs.</h6>
+                                
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s2.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >it's the Cottage Cheese</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Cottage Cheese</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(82 review)</span>
+                                </p>
+                                <h6>800 Rs.</h6>
+                                
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s3.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >its the silky Butter</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Butter</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span><br>
+                                    <span>(72 review)</span>
+                                </p>
+                                <h6>200 Rs.</h6>
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s4.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >The lovely Yoghurt</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Yogurt</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(40 review)</span>
+                                </p>
+                                <h6>400 Rs.</h6>
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s5.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >Its an all in one</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Farm Milk</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span><br>
+                                    <span>(70 review)</span>
+                                </p>
+                                <h6>350 Rs.</h6>
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s6.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >Its too hot</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Ice Cream</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(34 review)</span>
+                                </p>
+                                <h6>250 Rs.</h6>
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s7.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >Let's have it.</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Creamery</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(12 review)</span>
+                                </p>
+                                <h6>650 Rs.</h6>
+
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s8.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >Cream Cow Milk</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Cow Milk</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span><br>
+                                    <span>(25 review)</span>
+                                </p>
+                                <h6>250 Rs.</h6>
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="product-item">
+                            <div class="product-thumb">
+                                <img src="static/assets/images/shop/s9.png" alt="shop">
+                                <div class="product-action-link">
+                                    <i class = "text-white" >its salted</i>
+                                     
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h5><a href="#">Salted Cheese</a></h5>
+                                <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(9 review)</span>
+                                </p>
+                                <h6>550 Rs.</h6>
+
+
+                                <div class="cart-button">
+                                    <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                    
+                                    <div >
+                                        <a href="#" class=" btn btn-success text-center mt-3 view-modal"  data-toggle="modal" data-target="#product_view_1">  Buy Now  </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 sticky-widget " style = "margin-top:-90px;">
+                <div class="sidebar-widget">
+                    
+                    <div class="shop-widget">
+                        <div class="widget-title">
+                            <h4>Available Products</h4>
+                        </div>
+                        <div class="widget-wrapper">
+                            <ul class="shop-menu">
+                                <li>
+                                    <a >Butter</a>
+                                    <ul class="shop-submenu">
+                                        <li><a >Organic Butter</a></li>
+                                        <li><a >Salted Butter</a></li>
+                                        <li><a >Clarified Butter</a></li>
+                                    </ul>
+                                </li>
+                                <li><a >Cheese</a>
+                                    <ul class="shop-submenu">
+                                        <li><a>Cheddar</a></li>
+                                        <li><a>Mozzarella</a></li>
+                                        <li><a>Emmental</a></li>
+                                        <li><a>Parmesan</a></li>
+                                    </ul>
+                                </li>
+                                <li><a >Ice Cream</a>
+                                    <ul class="shop-submenu">
+                                        <li><a >Gelato</a></li>
+                                        <li><a >Sorbet</a></li>
+                                        <li><a >Custard base</a></li>
+                                        <li><a >Philadelphia style</a></li>
+                                    </ul>
+                                </li>
+                                <li><a >Milk</a>
+                                    <ul class="shop-submenu">
+                                        <li><a >Cow’s Milk</a></li>
+                                        <li><a >Goat’s Milk</a></li>
+                                        <li><a >Soy Milk</a></li>
+                                        <li><a >Buffalo Milk</a></li>
+                                        <li><a >Coconut Milk</a></li>
+                                    </ul>
+                                </li>
+                                <li><a >Yoghurt</a>
+                                    <ul class="shop-submenu">
+                                        <li><a >Kefir</a></li>
+                                        <li><a >Greek Yogurt</a></li>
+                                        <li><a >Frozen Yogurt</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Cream</a>
+                                    <ul class="shop-submenu">
+                                        <li><a >Clotted cream</a></li>
+                                        <li><a >Heavy cream</a></li>
+                                        <li><a >Whipping cream</a></li>
+                                        <li><a >Light cream</a></li>
+                                        <li><a >Sour cream</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="letest-product">
+                        <div class="widget-title">
+                            <h4>Latests Products</h4>
+                        </div>
+                        <div class="widget-wrapper">
+                            <ul>
+                                <li>
+                                    <div class="product-thumb">
+                                        <img src="static/assets/images/shop/lest-p/s1.png" alt="shop">
+                                    </div>
+                                    <div class="product-content">
+                                        <h5><a href="#">Fresh Milk</a></h5>
+                                    <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(97 review)</span>
+                                    </p>
+                                <h6>110 Rs.</h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-thumb">
+                                        <img src="static/assets/images/shop/lest-p/s2.png" alt="shop">
+                                    </div>
+                                    <div class="product-content">
+                                        <h5><a href="#">Cottage Cheese</a></h5>
+                                    <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(82 review)</span>
+                                    </p>
+                                    <h6>800 Rs.</h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-thumb">
+                                        <img src="static/assets/images/shop/lest-p/s3.png" alt="shop">
+                                    </div>
+                                    <div class="product-content">
+                                        <h5><a href="#">Butter</a></h5>
+                                    <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span><br>
+                                    <span>(72 review)</span>
+                                    </p>
+                                    <h6>200 Rs.</h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-thumb">
+                                        <img src="static/assets/images/shop/lest-p/s4.png" alt="shop">
+                                    </div>
+                                    <div class="product-content">
+                                        <h5><a href="#">Yogurt</a></h5>
+                                    <p>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star checked"></span>
+                                    <span class = "fa fa-star unchecked"></span>
+                                    <span class = "fa fa-star unchecked"></span><br>
+                                    <span>(40 review)</span>
+                                    </p>
+                                    <h6>400 Rs.</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="modal" id="product_view_4">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"><i class="fas fa-window-close"></i></button>
+                <div class="modal-body">
+                    <div class="product-details-inner">
+                        <div class="row">
+                            <div class="col-lg-5 col-12">
+                                <div class="popup-slide">
+                                        <div class="thumb mt-2 ml-2 " >
+                                            <img src="static/assets/images/shop/gman.png" alt="shop">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="product-content">
+                                    <h3 ><a href="#" style="color: olivedrab;" ><b>Let's Get it Delivered</b></a></h3><br>
+
+
+                                    <form class="form-horizontal" action="{% url 'saveEq' %}" method="POST">
+                                        {% csrf_token %}
+                                        <div class="form-group" style = "font-family: Frank Ruhl Libre, serif;">
+                                            <label class="control-label"  for="name">Full Name:</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name">
+                                            <label class="control-label " style = "margin-top:-20px;" for="add">Address:</label>
+                                            <input type="text" class="form-control" id="add" placeholder="Enter Complete Address" name="proj">
+                                            <label class="control-label " style = "margin-top:-20px;"for="pwd" id="quantity" name="quantity">Contact Number:</label>      
+                                              <input type="text" class="form-control" id="quantity" placeholder="Enter Contact Number" name="quantity">
+                                        </div>  
+                                    
+                                       <label for="" style="color: olivedrab;"> <input name="answer" id="answer1"type="radio"  value={{cos}}> {{cos}}</label>
+                                       <label for="" style="color: olivedrab;"> <input name="answer" id="answer1" type="radio" value={{cc}}>{{cc}}</label>
+                                       <button class="btn btn-success text-center mt-2" type="submit"> Deliver it now </button>
+                                    </form>
+                                </div>
+                                <div >
+                                   
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+<!-- Shop Page Section ending here -->
+{% endblock %}
